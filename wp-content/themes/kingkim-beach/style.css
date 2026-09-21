@@ -1,0 +1,151 @@
+/*
+Theme Name: Kingkim Beach
+Description: An editable tropical hospitality block theme for Kingkim Beach Resort.
+Version: 1.0.0
+Requires at least: 6.6
+Requires PHP: 8.0
+Text Domain: kingkim-beach
+*/
+html{scroll-behavior:smooth}body{margin:0}a{text-underline-offset:5px}*{box-sizing:border-box}.wp-site-blocks> *{margin-block-start:0}header{background:#fff}.kk-header{padding:24px 5%!important;max-width:1440px;margin:auto}.kk-logo{font-size:30px!important;letter-spacing:3px;font-weight:700;line-height:1.2}.kk-logo a{text-decoration:none}.kk-tagline{font-size:9px!important;letter-spacing:3px;margin-top:10px!important}.wp-block-navigation{font-size:13px;font-weight:500}.kk-hero{min-height:690px!important;padding:90px 7%!important}.kk-hero .wp-block-cover__inner-container{max-width:1240px;margin:auto}.kk-hero h1{max-width:740px;font-size:clamp(54px,6.5vw,96px)!important;line-height:1.03;letter-spacing:-3px;margin:24px 0}.kk-eyebrow{text-transform:uppercase;font-family:Arial,sans-serif;font-size:11px!important;font-weight:600;letter-spacing:2.7px}.kk-hero p:not(.kk-eyebrow){max-width:450px;font-size:17px;line-height:1.7}.wp-block-button__link{font-size:12px;font-weight:600;letter-spacing:.5px;padding:16px 26px;border-radius:2px}.kk-section{padding:90px 6%!important}.kk-section h2{font-size:clamp(36px,4vw,56px);line-height:1.12;margin-top:16px}.kk-section .wp-block-columns{gap:64px}.kk-section figure img{object-fit:cover;border-radius:3px}.kk-intro-img img{height:490px;width:100%}.kk-rule{border-top:1px solid #dce3db;padding-top:22px;margin-top:32px}.kk-sand{background:#f6f3eb}.kk-teal{background:#123e40;color:white}.kk-strip{padding:24px 6%;border-bottom:1px solid #e5e8e2}.kk-strip p{font-size:12px;letter-spacing:1px}.kk-photo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.kk-photo-grid figure{margin:0}.kk-photo-grid img{height:310px;width:100%;object-fit:cover}.kk-photo-grid figcaption{font-size:13px;padding-top:12px;color:#49605d}.kk-footer{padding:60px 6% 24px!important}.kk-footer a{color:inherit}.kk-footer p{font-size:13px}.kk-room-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin:36px 0}.kk-room{border:1px solid #dae2dc;background:white;border-radius:4px;overflow:hidden}.kk-room img{width:100%;height:270px;object-fit:cover;display:block}.kk-room-body{padding:26px}.kk-room h3{font-size:29px;margin:0 0 12px}.kk-room p{font-size:14px;color:#536560}.kk-room a{color:#175e60}.kk-rate{border-top:1px solid #e1e7e0;padding-top:20px;display:flex;align-items:center;justify-content:space-between;gap:10px}.kk-rate strong{font-size:20px;color:#153b3d}.kk-booking{background:#f6f3eb;padding:32px;border:1px solid #dce3da;border-radius:4px}.kk-fields{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.kk-booking label{display:block;font-size:13px;font-weight:600}.kk-booking input,.kk-booking select,.kk-booking textarea{display:block;width:100%;font:inherit;padding:13px;border:1px solid #b9c9c0;background:white;border-radius:2px;margin-top:8px}.kk-booking button{background:#155e60;color:white;border:0;padding:16px 24px;font:inherit;cursor:pointer;border-radius:2px;margin-top:20px}.kk-booking button:disabled{opacity:.55;cursor:wait}.kk-booking small{display:block;margin:14px 0;color:#51655d}.kk-booking [role=status]{margin-top:18px;font-weight:600}.kk-guest{margin-top:28px;border-top:1px solid #ccd7ce;padding-top:24px}.kk-guest[hidden]{display:none}.kk-check{display:flex!important;align-items:flex-start;gap:12px;margin-top:20px}.kk-check input{width:auto;margin:3px 0}.kk-room-detail{padding:30px;background:#f6f3eb;margin:30px 0}.kk-page-title{padding:65px 6% 20px}.kk-page-content{padding:0 6% 70px}.kk-page-content> *{max-width:1200px;margin-left:auto;margin-right:auto}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #bd8e41;outline-offset:4px}@media(max-width:800px){.kk-header{padding:18px 5%!important}.kk-header .wp-block-buttons{display:none}.kk-hero{min-height:610px!important;padding:65px 6%!important}.kk-hero h1{letter-spacing:-1.5px}.kk-section{padding:60px 6%!important}.kk-section .wp-block-columns{gap:30px}.kk-room-grid,.kk-photo-grid{grid-template-columns:1fr}.kk-fields{grid-template-columns:1fr}.kk-intro-img img{height:360px}.kk-booking{padding:22px}.kk-strip .wp-block-group{gap:16px;justify-content:center}.kk-room img{height:300px}}
+/* Preserve complete photographs; only the decorative hero fills a cropped frame. */
+.wp-block-image img{max-width:100%;height:auto;object-fit:contain}.kk-section .wp-block-image img,.kk-photo-grid img,.kk-intro-img img,.kk-room img{width:100%;height:auto;object-fit:contain}.kk-photo-grid{align-items:start}.kk-photo-grid>figure{margin-block-start:0}.kk-sign-image{max-width:420px;margin-inline:auto}.single-kk_room .wp-block-post-featured-image img{width:100%;height:auto;object-fit:contain}.kk-reasons{display:grid;grid-template-columns:repeat(3,1fr);gap:36px}.kk-reasons>div{margin:0}.kk-reasons h3{font-size:28px}.kk-hero h1{font-size:clamp(44px,6.5vw,90px)!important;letter-spacing:1px;max-width:950px}.kk-hero .kk-hero-subtitle{font-size:clamp(18px,2vw,26px)!important;max-width:650px!important}.kk-hero .is-style-outline .wp-block-button__link{color:white;border-color:white}.kk-hero .wp-block-cover__image-background{object-fit:cover;object-position:center}.kk-hero .wp-block-buttons{gap:16px}@media(max-width:800px){.kk-reasons{grid-template-columns:1fr}.kk-hero h1{font-size:48px!important;letter-spacing:0}.kk-hero .wp-block-buttons{align-items:flex-start}.kk-sign-image{max-width:100%}}
+.kk-room-specs{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}.kk-room-specs dt,#kk-review dt{font-weight:700}.kk-room-specs dd,#kk-review dd{margin:4px 0 18px}#kk-review{margin-top:28px;padding:24px;background:white;border:1px solid #b9c9c0}#kk-review[hidden]{display:none}@media(max-width:700px){.kk-room-specs{grid-template-columns:1fr}}
+.kk-photo-open{display:block;width:100%;padding:0;border:0;background:transparent;cursor:zoom-in}.kk-photo-open img{display:block;width:100%;height:auto;object-fit:contain}.kk-lightbox{width:min(94vw,1150px);max-width:94vw;max-height:94vh;padding:22px;background:#102f32;color:#fff;border:0;border-radius:6px}.kk-lightbox::backdrop{background:rgba(4,20,23,.88)}.kk-lightbox>img{display:block;width:100%;height:65vh;object-fit:contain}.kk-lightbox button{background:white;color:#153b3d;border:0;padding:12px 20px;border-radius:3px;cursor:pointer;font:inherit}.kk-lightbox-close{display:block;margin:0 0 16px auto}.kk-lightbox-controls{display:flex;justify-content:space-between;gap:20px}.kk-lightbox p{font-size:14px}.kk-portfolio-note{font-size:12px;line-height:1.6;color:#52665f;margin-top:28px!important}.kk-room-body,.wp-block-column{min-width:0}.kk-booking input,.kk-booking select{min-width:0;max-width:100%}.kk-booking dd{overflow-wrap:anywhere}@media(min-width:801px) and (max-width:1100px){.kk-room-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.kk-header{gap:20px!important}.kk-header .wp-block-buttons{display:none}}@media(max-width:600px){.kk-lightbox{padding:14px}.kk-lightbox>img{height:55vh}.kk-lightbox button{font-size:14px;padding:12px}.kk-room-grid,.kk-photo-grid,.kk-fields{grid-template-columns:minmax(0,1fr)}}
+/* Keep white hero copy readable even over the brightest area of the photograph. */
+
+.kk-hero .wp-block-cover__background{opacity:.7}.kk-hero .wp-block-cover__inner-container{position:relative}.kk-lightbox button:focus-visible{outline:3px solid #ffcf77;outline-offset:4px}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Resort gallery: uniform preview crops; original files and lightbox stay unchanged. */
+.kk-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+.kk-photo-grid > figure {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.kk-photo-grid .kk-photo-open,
+.kk-photo-grid > figure > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.kk-photo-grid .wp-block-image img,
+.kk-photo-grid > figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: var(--gallery-position, center);
+  transition: transform 300ms ease;
+}
+/* Optional Gutenberg image-block classes for individual focal points. */
+.kk-photo-grid .kk-focus-top { --gallery-position: center top; }
+.kk-photo-grid .kk-focus-upper { --gallery-position: center 35%; }
+/* Keep the kayak guest and coconut prominent in their portrait photographs. */
+.kk-photo-grid img[src*="clear-kayak"] { --gallery-position: center 65%; }
+.kk-photo-grid img[src*="fresh-coconut"] { --gallery-position: center 60%; }
+.kk-photo-grid > figure:focus-within {
+  outline: 3px solid #155e60;
+  outline-offset: 4px;
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .kk-photo-grid > figure:hover img { transform: scale(1.035); }
+}
+@media (max-width: 1023px) {
+  .kk-photo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 599px) {
+  .kk-photo-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .kk-photo-grid > figure img { transition: none; }
+}
+
+/* Comfortable layouts and controls across phone, tablet and desktop. */
+.kk-page-title { padding-top: clamp(32px, 5vw, 65px); }
+.kk-page-title h1 { font-size: clamp(36px, 4vw, 56px); }
+.kk-page-content h2 { font-size: clamp(30px, 3.2vw, 44px); }
+.kk-page-content h3 { font-size: clamp(24px, 2.4vw, 32px); }
+.kk-page-content p { overflow-wrap: break-word; }
+.kk-page-content .wp-block-columns { gap: clamp(24px, 4vw, 56px); }
+.kk-amenities-page .wp-block-post-content > .wp-block-columns {
+  margin-block: clamp(36px, 5vw, 64px);
+}
+.kk-amenities-page .wp-block-column > .wp-block-image:not(.kk-sign-image) {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 4px;
+  margin: 0 0 24px;
+}
+.kk-amenities-page .wp-block-column > .wp-block-image:not(.kk-sign-image) img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.kk-amenities-page .wp-block-image img[src*="clear-kayak"] { object-position: center 65%; }
+.kk-amenities-page .wp-block-image img[src*="fresh-coconut"] { object-position: center 60%; }
+.kk-amenities-page .kk-sign-image img { display: block; width: 100%; height: auto; }
+.kk-booking input, .kk-booking select, .kk-booking textarea { font-size: 16px; min-height: 48px; }
+.kk-booking .kk-check input { min-height: 20px; width: 20px; height: 20px; flex-shrink: 0; }
+.kk-check { padding-block: 8px; }
+.wp-block-button__link, .kk-booking button { min-height: 48px; }
+.kk-rate > a { display: inline-flex; align-items: center; min-height: 44px; }
+.kk-room-specs dd { overflow-wrap: anywhere; }
+@media (max-width: 999px) {
+  .kk-header { flex-wrap: nowrap !important; gap: 16px !important; }
+  .kk-header .wp-block-buttons { display: none; }
+  .kk-header .wp-block-navigation__responsive-container:not(.is-menu-open) { display: none !important; }
+  .kk-header .wp-block-navigation__responsive-container-open { display: flex !important; }
+  .kk-header .wp-block-navigation__responsive-container-open,
+  .kk-header .wp-block-navigation__responsive-container-close {
+    min-width: 44px; min-height: 44px; align-items: center; justify-content: center;
+  }
+  .kk-header .is-menu-open .wp-block-navigation-item__content {
+    display: flex; align-items: center; min-height: 48px; font-size: 18px;
+  }
+  .kk-header .is-menu-open .wp-block-navigation__container { gap: 8px; }
+}
+@media (min-width: 600px) and (max-width: 1100px) {
+  .kk-room-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .kk-room-body { padding: 20px; }
+  .kk-room h3 { font-size: 26px; }
+  .kk-rate { flex-wrap: wrap; }
+}
+@media (max-width: 599px) {
+  .kk-logo { font-size: clamp(18px, 5.8vw, 23px) !important; letter-spacing: 2px; }
+  .kk-tagline { letter-spacing: 2px; }
+  .kk-section { padding-block: 44px !important; }
+  .kk-page-content { padding-bottom: 44px; }
+  .kk-page-content .wp-block-columns { gap: 36px; }
+  .kk-amenities-page .kk-sign-image { max-width: 320px; }
+  .kk-booking { padding: 18px; }
+  .kk-booking button { width: 100%; }
+  #kk-review { padding: 18px; }
+  .kk-footer { padding-top: 40px !important; }
+  .kk-footer a { display: inline-block; padding-block: 8px; }
+}
+
+/* Booking cards and readable resort-wide rhythm. */
+body{font-size:17px}.wp-block-navigation{font-size:16px}.wp-block-button__link{font-size:14px}.kk-room p{font-size:16px}.kk-footer p{font-size:14px}.kk-section{padding-block:clamp(40px,5vw,68px)!important}.kk-page-title{padding-top:clamp(28px,4vw,48px)}.kk-amenities-page .wp-block-post-content>.wp-block-columns{margin-block:36px}.kk-page-content{padding-bottom:48px}.kk-room-grid{margin-block:28px}.kk-booking{border-radius:10px;padding:clamp(20px,3vw,36px)}.kk-stay-help{font-size:15px;color:#49605d}#kk-review,.kk-confirmation{background:#fff;border:1px solid #cadbd3;border-radius:10px;padding:clamp(20px,3vw,32px);margin-top:28px;box-shadow:0 12px 32px #153b3d0a}.kk-confirmation[hidden]{display:none}.kk-summary-head{display:flex;align-items:center;gap:24px;margin-bottom:28px}.kk-summary-head img{width:150px;height:112px;object-fit:cover;border-radius:6px;flex-shrink:0}.kk-summary-head h3{margin:8px 0!important;font-size:30px!important}.kk-summary-head p{margin:0;font-size:14px;overflow-wrap:anywhere}.kk-summary-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 32px;margin:0}.kk-summary-grid>div{min-width:0;border-bottom:1px solid #edf0eb;padding-bottom:16px}.kk-summary-grid dt{font-size:12px!important;text-transform:uppercase;letter-spacing:1px;color:#53665f}.kk-summary-grid dd,#kk-review .kk-summary-grid dd{margin:6px 0 0;font-size:16px;overflow-wrap:anywhere}.kk-summary-price{display:flex;justify-content:space-between;align-items:center;gap:20px;background:#edf4ef;border-radius:6px;padding:24px;margin-top:24px}.kk-summary-price span,.kk-summary-price small{display:block}.kk-summary-price small{font-size:14px;margin:4px 0;color:#49605d}.kk-summary-price strong{font-size:32px;color:#155e60;white-space:nowrap}.kk-summary-note{font-size:13px!important;color:#52665f}#kk-edit{background:#e7eeea;color:#153b3d}#kk-status:empty{display:none}#kk-status:not(:empty){padding:16px;border-radius:5px;background:#e8f1ee;font-size:15px}#kk-status[data-state=error]{background:#fff0e7;color:#813d19;border-left:3px solid #b86732}.kk-confirmation{border-top:5px solid #155e60}
+@media(max-width:599px){body{font-size:16px}.kk-summary-head{align-items:flex-start;gap:16px}.kk-summary-head img{width:88px;height:88px}.kk-summary-head h3{font-size:24px!important}.kk-summary-grid{grid-template-columns:minmax(0,1fr);gap:16px}.kk-summary-price{align-items:flex-start;flex-direction:column;gap:10px;padding:18px}.kk-summary-price strong{font-size:30px}#kk-review{padding:16px}.kk-booking{padding:18px}}
+/* Gutenberg resized images still fill the shared gallery card. */
+.kk-photo-grid > figure img { width:100%!important; height:100%!important; aspect-ratio:auto!important; }
+@media(max-width:430px){.kk-summary-head{flex-wrap:wrap}.kk-summary-head>div{flex:1 1 145px}.kk-summary-head .kk-eyebrow{letter-spacing:1.3px;font-size:10px!important}}
+.kk-photo-grid > figure { display:block; }
+.kk-photo-grid > figure > .kk-photo-open,
+.kk-photo-grid > figure > a,
+.kk-photo-grid > figure > img { position:absolute; inset:0; width:100%; height:100%; }
